@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /*?utm_
+Disallow: /*?from=
+Disallow: /*?ref=
+
+Sitemap: https://masliy.ru/sitemap.xml
+Host: https://masliy.ru
