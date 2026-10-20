@@ -21,21 +21,21 @@
 <meta property="og:site_name" content="Марина Маслий — психосоматика">
 <meta property="og:title" content="Психосоматика — Марина Маслий | Онлайн-консультации">
 <meta property="og:description" content="Работаю с симптомами, которые не находят объяснения в анализах. Первая встреча — бесплатно.">
-<meta property="og:image" content="https://github.io">
+<meta property="og:url" content="https://masliy.ru/">
 <meta property="og:image" content="https://masliy.ru/hero_image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1500">
 <meta property="og:image:alt" content="Марина Маслий — специалист по психосоматике">
-<meta name="twitter:image" content="https://github.io">
+<meta property="og:locale" content="ru_RU">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Психосоматика — Марина Маслий">
 <meta name="twitter:description" content="Работаю с симптомами, которые не находят объяснения в анализах.">
-<link rel="preload" as="image" href="https://github.io" fetchpriority="high">
+<meta name="twitter:image" content="https://masliy.ru/hero_image.png">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F0EADB'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='42' fill='%236B4E27' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="hero_image.png">
-<link rel="preload" as="image" href="https://masliy.ru" fetchpriority="high">
+<link rel="preload" as="image" href="hero_image.png" fetchpriority="high">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -377,7 +377,7 @@ body[data-theme="dark"] .portrait {
 .hero h1 {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(34px, 5.5vw, 56px);
+  font-size: clamp(26px, 4.5vw, 48px);
   line-height: 1.05;
   letter-spacing: -0.03em;
   color: var(--ink);
@@ -393,6 +393,7 @@ body[data-theme="dark"] .portrait {
 
 .hero h1 .line > span {
   display: inline-block;
+  white-space: nowrap;
   transition: transform 1.05s var(--ease), filter 1.05s var(--ease);
   transition-delay: calc(var(--i) * 100ms + 300ms);
 }
@@ -1499,7 +1500,7 @@ body[data-theme="dark"] .portrait {
 <section class="hero" id="hero" aria-labelledby="heroTitle">
   <div class="hero-inner">
     <figure class="portrait" aria-label="Марина Маслий">
-      <img class="hero-img" src="hero_image.png" alt="Марина Маслий — специалист по психосоматике" loading="eager">
+      <img src="./hero_image.png" alt="Марина Маслий — специалист по психосоматике" loading="eager" fetchpriority="high" decoding="async" width="800" height="1000">
     </figure>
 
     <div class="hero-content">
@@ -1526,7 +1527,7 @@ body[data-theme="dark"] .portrait {
   <h2 id="aboutTitle"><span class="inner">Обо <em>мне</em></span></h2>
 
   <div class="manifesto">
-    <p>Я как специалист по психосоматике знаю: тело не умеет молчать. Часто именно через симптомы оно рассказывает о том, что сложно выразить словами. Если вы устали от непонятных недомоганий, если врачи не находят причин, а состояние не улучшается — давайте разберёмся вместе.</p>
+    <p>Я — специалист по психосоматике, и знаю: тело не умеет молчать. Часто именно через симптомы оно рассказывает о том, что сложно выразить словами. Если вы устали от непонятных недомоганий, если врачи не находят причин, а состояние не улучшается — давайте разберёмся вместе.</p>
     <p>У каждого человека — своя история, и каждый симптом звучит по-своему. Моя работа — внимательно услышать эту историю и помочь перевести язык тела на понятный язык чувств и смыслов.</p>
     <p>Вы можете прийти с конкретным симптомом, с ощущением «всё болит, а не знаю почему» или просто с желанием стать спокойнее и устойчивее. В любом случае мы будем двигаться в вашем темпе, бережно и без спешки.</p>
     <p>Напишите, что сейчас важнее всего — и я предложу, как мы можем поработать вместе.</p>
@@ -1702,7 +1703,7 @@ body[data-theme="dark"] .portrait {
     <span class="chapter-num">VI</span>
     <span class="chapter-line"></span>
   </div>
-  <h2 id="reviewsTitle"><span class="inner">Отзывы <em>клиентов</em></span></h2>
+  <h2 id="reviewsTitle"><span class="inner">Слова <em>клиентов</em></span></h2>
 
   <div class="review-list">
     <article class="review" itemscope itemtype="https://schema.org/Review">
@@ -2162,7 +2163,7 @@ document.addEventListener("DOMContentLoaded", function(){
       if(e.target.matches("input, textarea, select")) return;
       if(e.ctrlKey || e.metaKey || e.altKey) return;
       if(e.key === "m" || e.key === "M" || e.key === "ь" || e.key === "Ь"){ e.preventDefault(); Menu.open(); return; }
-      if(e.key === "?"){А
+      if(e.key === "?"){
         e.preventDefault();
         Toast.show("M — меню · Esc — закрыть","info",3500);
         return;
